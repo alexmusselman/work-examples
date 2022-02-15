@@ -13,4 +13,5 @@ jobs:
           architecture: x64
       - run: javac -cp .:junit.jar *.java
       - run: java -jar junit.jar -cp . --scan-classpath
+      - run: java ChessOpeningsTest 
       - run: javadoc -d out -cp junit.jar *.java
