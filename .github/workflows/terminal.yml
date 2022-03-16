@@ -11,6 +11,6 @@ jobs:
           java-version: '16'
           java-package: jdk
           architecture: x64
-      - run: javac -cp .:junit.jar *.java
       - run: java -jar junit.jar -cp . --scan-classpath
+      - run: javac -cp .:junit.jar *.java
       - run: javadoc -d out -cp junit.jar *.java
